@@ -21,4 +21,4 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Build the Docker image
-      run: docker build . --file vote/Dockerfile --tag TestApp:$(date +%s)
+      run: docker build . --file vote/Dockerfile --tag testapp:$(date +%s)
