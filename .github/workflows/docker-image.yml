@@ -27,4 +27,4 @@ jobs:
       run: docker images
     
     - name: Docker Push
-      run: docker push ${{secrets.DOCKERHUB_USERNAME}}/test-app
+      run: docker push ${{secrets.DOCKERHUB_USERNAME}}/my-app
