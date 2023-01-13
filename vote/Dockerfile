@@ -8,11 +8,11 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the application directory
-WORKDIR app
+WORKDIR /app
 
 # Install our requirements.txt
-COPY requirements.txt app/requirements.txt
-RUN pip install -r app/requirements.txt
+COPY requirements.txt /app/requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy our code from the current folder to /app inside the container
 COPY . .
