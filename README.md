@@ -2,6 +2,7 @@
 
 A simple distributed application running across multiple Docker containers. 
 Release-Version-1
+Release-Version-2
 
 ## Getting started
 
