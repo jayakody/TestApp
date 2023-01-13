@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file vote/Dockerfile --tag test-app:$(date +%s)
     
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USERNAME}}/test-app
+      run: docker push ${{secrets.DOCKERHUB_USERNAME}}/test-app
